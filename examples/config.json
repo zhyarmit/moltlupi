@@ -1,0 +1,22 @@
+{
+  "windows": "windows.json",
+  "posts": "posts.jsonl",
+  "output_dir": "../runs/example",
+  "discovery": {
+    "scores": "scores.jsonl",
+    "aggregation": "mean",
+    "edge_threshold": 0.85,
+    "density_threshold": 0.85,
+    "min_density": 0.80,
+    "min_size": 4,
+    "resolution": 0.1,
+    "seed": 0
+  },
+  "annotation": {
+    "annotations": "annotations.jsonl"
+  },
+  "assessment": {
+    "min_probability": 0.6,
+    "objective_policy": "legacy_target"
+  }
+}

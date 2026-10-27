@@ -1,0 +1,15 @@
+{
+  "tests_passed": 8,
+  "offline_cli": "passed",
+  "real_checkpoint_tested": false,
+  "live_annotation_services_tested": false,
+  "environment": {
+    "numpy": "2.3.5",
+    "igraph": "1.0.0",
+    "leidenalg": "0.12.0",
+    "tqdm": "4.70.1",
+    "onnxruntime": "1.31.1",
+    "onnx": "1.23.2",
+    "pytest": "9.1.1"
+  }
+}

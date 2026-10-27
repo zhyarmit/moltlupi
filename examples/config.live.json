@@ -1,0 +1,31 @@
+{
+  "windows": "../data/windows.json",
+  "posts": "../data/posts.jsonl",
+  "output_dir": "../runs/live",
+  "discovery": {
+    "embeddings": "../data/agent_windows.npz",
+    "model": "../models/student.onnx",
+    "output_type": "logits",
+    "aggregation": "mean",
+    "sample_pairs": 10000000,
+    "batch_size": 512,
+    "edge_threshold": 0.85,
+    "density_threshold": 0.85,
+    "min_density": 0.80,
+    "min_size": 4,
+    "resolution": 0.1,
+    "seed": 0
+  },
+  "annotation": {
+    "artifact_model": "REPLACE_WITH_YOUR_GEMMA_MODEL_TAG",
+    "artifact_backend": "ollama",
+    "artifact_base_url": "http://127.0.0.1:11434",
+    "model": "jev-1.13.0",
+    "min_probability": 0.6,
+    "min_confidence": 0.6
+  },
+  "assessment": {
+    "min_probability": 0.6,
+    "objective_policy": "legacy_target"
+  }
+}
